@@ -184,3 +184,28 @@ int main(int argc, const char * argv[]) {
  }
  return 0;
 } 
+
+//=======================================================================
+// UNIX SHELL OUTPUTS
+//=======================================================================
+// osh> ls -l
+// total 28
+// -rwxrwxr-x 1 osc osc 13992 Mar 28 16:45 out
+// -rw-rw-r-- 1 osc osc   388 Mar 28 15:58 README.md
+// -rw-rw-r-- 1 osc osc  5711 Mar 28 16:07 Unix_Shell.c
+// osh> !!
+// total 28
+// -rwxrwxr-x 1 osc osc 13992 Mar 28 16:45 out
+// -rw-rw-r-- 1 osc osc   388 Mar 28 15:58 README.md
+// -rw-rw-r-- 1 osc osc  5711 Mar 28 16:07 Unix_Shell.c
+// osh> ls -l | README.md
+// osh> 
+// osh> !!  
+// No command used before.
+// osh> ls -l | less README.md
+// osh> < README.md
+// osh> > README.md
+// osh> exit()
+//=======================================================================
+//END OF OUTPUTS
+//=======================================================================
