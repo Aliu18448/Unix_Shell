@@ -77,7 +77,7 @@ int main(int argc, const char * argv[]) {
     fflush(stdout);
     fgets(input, BUFSIZ, stdin);
     input[strlen(input) - 1] = '\0'; /* "\n" is set to null */
-    if(strncmp(input, "exit", 4) == 0)/* exit the command line*/
+    if(strncmp(input, "exit()", 6) == 0)/* exit the command line*/
         return 0;
     if(strncmp(input, "!!", 2)) /*history check */
         strcpy(RC, input);
